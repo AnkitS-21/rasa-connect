@@ -89,6 +89,10 @@ const VendorLogin = () => {
                 type="submit" 
                 variant="vendor" 
                 className="w-full"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = '/vendor/dashboard';
+                }}
               >
                 {isLogin ? "Sign In" : "Create Account"}
               </Button>

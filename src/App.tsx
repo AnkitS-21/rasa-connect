@@ -7,6 +7,8 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import VendorLogin from "./pages/VendorLogin";
 import SupplierLogin from "./pages/SupplierLogin";
+import VendorDashboard from "./pages/VendorDashboard";
+import SupplierDashboard from "./pages/SupplierDashboard";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +22,8 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/vendor/login" element={<VendorLogin />} />
           <Route path="/supplier/login" element={<SupplierLogin />} />
+          <Route path="/vendor/dashboard" element={<VendorDashboard />} />
+          <Route path="/supplier/dashboard" element={<SupplierDashboard />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

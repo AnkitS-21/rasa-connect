@@ -95,6 +95,10 @@ const SupplierLogin = () => {
                 type="submit" 
                 variant="supplier" 
                 className="w-full"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = '/supplier/dashboard';
+                }}
               >
                 {isLogin ? "Access Portal" : "Submit Application"}
               </Button>
